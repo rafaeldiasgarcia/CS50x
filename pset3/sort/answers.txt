@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: sort1 demonstrated a significantly faster execution time when processing an already sorted list (sorted50000.txt took approximately 0.009s) compared to unsorted or reversed lists (random50000.txt took ~5.07s and reversed50000.txt took ~4.45s). This behavior, where a pre-sorted input results in O(n) performance while other cases are closer to O(n^2), is characteristic of Bubble Sort.
+
+sort2 uses: Merge Sort
+
+How do you know?: sort2 exhibited consistently fast performance across all types of input files. The execution times for sorted50000.txt (~0.014s), random50000.txt (~0.017s), and reversed50000.txt (~0.017s) were all very low and very similar. This consistent O(n log n) performance, regardless of the initial order of data, is characteristic of Merge Sort. It was the fastest algorithm overall for large, unsorted datasets.
+
+sort3 uses: Selection Sort
+
+How do you know?: sort3 showed relatively consistent execution times across all input types, without the significant speedup on sorted data seen in Bubble Sort, nor the extreme speed of Merge Sort. The times for sorted50000.txt (~1.719s), random50000.txt (~1.791s), and reversed50000.txt (~1.968s) were all in a similar range and indicative of an O(n^2) complexity that is not heavily impacted by the input's initial order. This behavior matches that of Selection Sort.
