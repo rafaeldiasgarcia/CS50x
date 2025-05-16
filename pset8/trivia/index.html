@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let botoesCorretos = document.querySelectorAll('.correct');
+                for (let i = 0; i < botoesCorretos.length; i++) {
+                    botoesCorretos[i].addEventListener('click', function() {
+                        botoesCorretos[i].style.backgroundColor = 'green';
+                        document.querySelector('#feedback1').innerHTML = 'Correto!';
+                    });
+                }
+
+                let botoesIncorretos = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < botoesIncorretos.length; i++) {
+                    botoesIncorretos[i].addEventListener('click', function() {
+                        botoesIncorretos[i].style.backgroundColor = 'red';
+                        document.querySelector('#feedback1').innerHTML = 'Incorreto';
+                    });
+                }
+
+                let botaoVerificarRespostaLivre = document.querySelector('#verificar_resposta_livre_btn');
+                botaoVerificarRespostaLivre.addEventListener('click', function() {
+                    let inputRespostaLivre = document.querySelector('#resposta_livre_input');
+                    let feedbackRespostaLivre = document.querySelector('#feedback2');
+                    let resposta = inputRespostaLivre.value.trim().toLowerCase();
+
+                    if (resposta === 'oxigênio' || resposta === 'oxigenio') {
+                        inputRespostaLivre.style.backgroundColor = 'green';
+                        feedbackRespostaLivre.innerHTML = 'Correto!';
+                    } else {
+                        inputRespostaLivre.style.backgroundColor = 'red';
+                        feedbackRespostaLivre.innerHTML = 'Incorreto';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Parte 1: Múltipla Escolha</h2>
+                <hr>
+                <h3>Qual é a capital da França?</h3>
+                <button class="incorrect">Berlim</button>
+                <button class="incorrect">Madri</button>
+                <button class="correct">Paris</button>
+                <button class="incorrect">Roma</button>
+                <p class="feedback" id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Parte 2: Resposta Livre</h2>
+                <hr>
+                <h3>Qual elemento químico tem o símbolo 'O'?</h3>
+                <input type="text" id="resposta_livre_input">
+                <button id="verificar_resposta_livre_btn">Verificar</button>
+                <p class="feedback" id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

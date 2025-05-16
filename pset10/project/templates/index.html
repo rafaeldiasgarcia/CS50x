@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termo Clone - CS50x</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript">
+        const PALAVRA_SECRETA_SERVIDOR = '{{ palavra_secreta | e }}';
+        const LISTA_PALAVRAS_VALIDAS_SERVIDOR = {{ palavras_validas | tojson | safe }};
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Termo Clone</h1>
+    </header>
+    <main>
+        <div id="mensagens-container">
+        </div>
+        <div id="grade-container">
+        </div>
+        <div id="teclado-container">
+        </div>
+        <div id="controles-fim-jogo" style="display: none; margin-top: 20px; text-align: center;">
+            <button id="btn-jogar-novamente">Jogar Novamente</button>
+        </div>
+    </main>
+    <footer>
+        <p>Rafael Dias Garcia - Projeto Final CS50x</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

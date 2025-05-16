@@ -1,0 +1,41 @@
+Tags HTML Utilizadas (pelo menos 10 além de html, head, body, title):
+1. meta (para charset e viewport)
+2. link (para CSS e Bootstrap)
+3. nav (para a barra de navegação)
+4. div (para estrutura, container, jumbotron, card, etc.)
+5. a (para links de navegação e outros)
+6. button (para o botão de saudação e na navbar-toggler)
+7. span (usado pelo Bootstrap no toggler e sr-only)
+8. ul (para listas de navegação e listas de conteúdo)
+9. li (para itens de lista)
+10. main (para o conteúdo principal da página)
+11. h1 (e outros hX como h2, h5)
+12. p (parágrafos)
+13. hr (linha horizontal)
+14. footer (para o rodapé)
+15. script (para JavaScript)
+16. section (para seções de conteúdo)
+17. header (para cabeçalhos de seção/página)
+
+Propriedades CSS Utilizadas (pelo menos 5 em styles.css):
+1. font-family
+2. background-color
+3. color
+4. line-height
+5. margin-bottom
+6. font-weight
+7. padding-right
+8. border
+9. box-shadow
+10. transform
+11. transition
+12. border-top
+13. padding-top
+14. font-style
+15. margin-top
+
+Uso de JavaScript:
+JavaScript foi utilizado para adicionar interatividade à página inicial, permitindo que o usuário clique em um botão para exibir uma mensagem de saudação dinâmica na tela.
+
+Uso de Bootstrap:
+Bootstrap foi utilizado para estilizar o layout geral do site, incluindo a barra de navegação responsiva, o sistema de grid para organizar conteúdo (ex: cards na página de projetos), componentes como jumbotron, cards, botões, e para garantir que o site seja visualmente agradável e responsivo em diferentes tamanhos de tela.
