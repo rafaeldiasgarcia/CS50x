@@ -1,6 +1,6 @@
 # 💻 CS50x – Introduction to Computer Science
 
-Este repositório contém minhas soluções para os exercícios, labs e projeto final do curso **CS50x (2024)**, oferecido por Harvard University.
+Este repositório contém minhas soluções para os exercícios, labs e projeto final do curso **CS50x (2025)**, oferecido por Harvard University.
 
 ## 📚 Conteúdo do Curso
 
