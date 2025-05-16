@@ -1,0 +1,20 @@
+1. Caracterizando a Audio Aura:
+
+Com base nas 100 músicas principais do ouvinte em songs.db, podemos calcular as médias das características que definem a "Audio Aura" do Spotify:
+- Energia Média: aproximadamente 0.66
+- Valência Média: aproximadamente 0.48
+- Dançabilidade Média: aproximadamente 0.72
+
+Isso sugere uma "Audio Aura" para este ouvinte que é moderadamente energética e bastante dançável. A valência próxima de 0.5 indica um equilíbrio entre músicas positivas (felizes) e negativas (melancólicas), talvez pendendo ligeiramente para um humor mais contido ou variado, em vez de puramente eufórico. No geral, o ouvinte parece apreciar músicas com um bom ritmo para se movimentar, mas com uma gama emocional que não é exclusivamente alegre.
+
+2. Limitações e Propostas para o Cálculo da Aura:
+
+A forma como calculamos essa aura (uma média simples de três características para 100 músicas) pode não ser totalmente representativa do ouvinte pelas seguintes razões:
+- A média simples não considera a frequência com que cada música foi ouvida. Uma música no top 100 ouvida 500 vezes tem o mesmo peso na média que uma ouvida 50 vezes, o que pode distorcer a verdadeira preferência do ouvinte.
+- O Top 100 representa apenas uma fração do que o ouvinte pode ter escutado, possivelmente omitindo gêneros ou humores menos frequentes, mas ainda apreciados.
+- A aura é baseada em apenas três características (energia, valência, dançabilidade), enquanto o gosto musical é influenciado por muitos outros fatores como gênero, instrumentação, presença de vocais, etc.
+
+Melhores maneiras de calcular a aura poderiam incluir:
+- Média Ponderada: Ponderar as características de cada música pela sua contagem de reproduções. Músicas mais ouvidas teriam um impacto maior na definição da aura.
+- Análise de Clusters e Perfis Múltiplos: Em vez de uma única aura média, identificar "clusters" de músicas com características semelhantes dentro do top 100. Isso poderia revelar que o ouvinte tem, por exemplo, um perfil principal de "pop dançante energético" e um perfil secundário de "R&B introspectivo".
+- Incorporar Mais Características Musicais: Utilizar um espectro mais amplo de atributos (como acousticness, instrumentalness, speechiness, tempo, modo) para criar um perfil de aura mais rico e detalhado.
